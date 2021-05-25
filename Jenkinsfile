@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Etapte de build'
                 sh 'python3 --version'
-                echo '$(hostname)'
+                sh "echo 'nom de la machine hôte'$(hostname)"
             }
         }
         stage ('Test') {
