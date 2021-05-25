@@ -16,7 +16,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 echo "Etape de deploiement"
-                sh 'cat f.txt'
+                sh 'echo "utilisateur en cours:" $(whoami)
             }
         }
     }
